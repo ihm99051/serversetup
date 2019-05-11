@@ -14,7 +14,6 @@ apt update
 apt install nginx
 ```
 
-
 # Install extras
 ```
 apt install vim
@@ -32,12 +31,12 @@ apt-get install certbot python-certbot-nginx -t stretch-backports
 certbot --nginx
 ```
 
-#Edit conf
+Edit conf
 ```
 vim /etc/nginx/sites-available/default
-
-#Add lines
-
+```
+Add following lines
+```
 	location /ray {
         	proxy_redirect off;
         	proxy_pass http://127.0.0.1:64079; #此IP地址和端口需要和v2ray服务器保持一致，
@@ -47,7 +46,6 @@ vim /etc/nginx/sites-available/default
         	proxy_set_header Host $http_host;
 	}
 ```
-
 
 # Install BBR
 ```
