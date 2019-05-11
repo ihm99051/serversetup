@@ -8,14 +8,10 @@ chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 ```
 
-# Install nginx
+# Install nginx + extras
 ```
 apt update
 apt install nginx
-```
-
-# Install extras
-```
 apt install vim
 apt install curl
 apt-get update && sudo apt-get install speedtest-cli
