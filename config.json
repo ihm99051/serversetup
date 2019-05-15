@@ -85,7 +85,7 @@
 		},
 			//QUIC WeChat-video
 			{
-				"port": 16285,
+				"port": 8000,
 				"protocol": "vmess",
 				"settings": {
 					"clients": [
@@ -109,7 +109,7 @@
 			},
 			//mKCP WeChat-video
 			{
-				"port": 8000,
+				"port": 16285,
 				"protocol": "vmess",
 				"settings": {
 					"clients": [
