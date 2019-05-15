@@ -26,7 +26,7 @@
 			}
 		},
 		{
-			"port": 64078,
+			"port": 8001,
 			"protocol": "vmess",
 			"settings": {
 				"clients": [
@@ -85,7 +85,7 @@
 		},
 			//QUIC WeChat-video
 			{
-				"port": 64077,
+				"port": 16285,
 				"protocol": "vmess",
 				"settings": {
 					"clients": [
@@ -102,6 +102,35 @@
 						"security": "chacha20-poly1305",
 						"key": "",
 						"header": {
+							"type": "wechat-video"
+						}
+					}
+				}
+			},
+			//mKCP WeChat-video
+			{
+				"port": 8000,
+				"protocol": "vmess",
+				"settings": {
+					"clients": [
+						{
+							"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
+							"level": 1,
+							"alterId": 32
+						}
+					]
+				},
+				"streamSettings": {
+					"network": "kcp",
+					 "kcpSettings": {
+						"mtu": 1350,
+						 "tti": 20,
+						 "uplinkCapacity": 12,
+						 "downlinkCapacity": 100,
+						 "congestion": false,
+						 "readBufferSize": 1,
+						 "writeBufferSize": 1,
+						 "header": {
 							"type": "wechat-video"
 						}
 					}
