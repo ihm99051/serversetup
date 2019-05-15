@@ -100,7 +100,7 @@
 					"network": "quic",
 					 "quicSettings": {
 						"security": "chacha20-poly1305",
-						"key": "",
+						"key": "firewall",
 						"header": {
 							"type": "wechat-video"
 						}
