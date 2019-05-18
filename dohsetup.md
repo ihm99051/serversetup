@@ -14,7 +14,7 @@ brew install cloudflare/cloudflare/cloudflared
 2) Create /usr/local/etc/cloudflared/config.yaml, with the following content
 
 ```
-mkdir /usr/local/etc/cloudflared/
+mkdir -p /usr/local/etc/cloudflared
 vim /usr/local/etc/cloudflared/config.yaml
 ```
 
