@@ -74,7 +74,6 @@
 					}
 				
 			},
-
 			"sniffing": {
 				"enabled": true,
 				"destOverride": [
@@ -83,30 +82,30 @@
 				]
 			}
 		},
-			//QUIC WeChat-video
-			{
-				"port": 16285,
-				"protocol": "vmess",
-				"settings": {
-					"clients": [
-						{
-							"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
-							"level": 1,
-							"alterId": 32
-						}
-					]
-				},
-				"streamSettings": {
-					"network": "quic",
-					 "quicSettings": {
-						"security": "chacha20-poly1305",
-						"key": "firewall",
-						"header": {
-							"type": "wechat-video"
-						}
+		//QUIC WeChat-video
+		{
+			"port": 16285,
+			"protocol": "vmess",
+			"settings": {
+				"clients": [
+					{
+						"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
+						"level": 1,
+						"alterId": 32
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "quic",
+				 "quicSettings": {
+					"security": "chacha20-poly1305",
+					"key": "firewall",
+					"header": {
+						"type": "wechat-video"
 					}
 				}
-			},
+			}
+		},
 		{
 			"protocol": "shadowsocks",
 			"port": 8081,
@@ -159,37 +158,5 @@
 			"9.9.9.9",
 			"208.67.222.222"
 		]
-	},
-	"routing": {
-		"domainStrategy": "IPOnDemand",
-		"rules": [
-			{
-				"type": "field",
-				"ip": [
-					"0.0.0.0/8",
-					"10.0.0.0/8",
-					"100.64.0.0/10",
-					"127.0.0.0/8",
-					"169.254.0.0/16",
-					"172.16.0.0/12",
-					"192.0.0.0/24",
-					"192.0.2.0/24",
-					"192.168.0.0/16",
-					"198.18.0.0/15",
-					"198.51.100.0/24",
-					"203.0.113.0/24",
-					"::1/128",
-					"fc00::/7",
-					"fe80::/10"
-				],
-				"outboundTag": "blocked"
-			},
-			{
-				"type": "field",
-				"inboundTag": ["tg-in"],
-				"outboundTag": "tg-out"
-			}
-		]
 	}
-
 }
