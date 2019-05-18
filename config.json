@@ -134,7 +134,9 @@
 	"outbounds": [
 		{
 			"protocol": "freedom",
-			"settings": {}
+			"settings": {
+				"domainStrategy": "UseIP"
+			}
 		},
 		{
 			"protocol": "blackhole",
@@ -144,6 +146,12 @@
 			"protocol": "mtproto",
 			"settings": {}
 		}
-	]
+	],
+	"dns": {
+		"servers": [
+			"9.9.9.9",
+			"1.1.1.1"
+		]
+	}
 
 }
