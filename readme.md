@@ -88,4 +88,6 @@ service v2ray status
 ```
 
 # Install SS-libev
-wget --no-check-certificate -O /etc/vshadowsocks-libev/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-libev/config.json
+```
+wget --no-check-certificate -O /etc/shadowsocks-libev/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-libev/config.json
+```
