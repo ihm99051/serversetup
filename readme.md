@@ -88,7 +88,7 @@ service v2ray status
 ```
 
 # Install SS-libev
-Follow [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) to install
+Follow [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) to install, using config below
 ```
 wget --no-check-certificate -O /etc/shadowsocks-libev/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-libev/config.json
 ```
