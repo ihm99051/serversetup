@@ -58,7 +58,7 @@ bash <(curl -L -s https://install.direct/go.sh)
 
 # Config V2ray
 ```
-wget --no-check-certificate -O /etc/v2ray/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/config.json
+wget --no-check-certificate -O /etc/v2ray/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/v2ray/config.json
 ```
 
 # Config Network Interface
