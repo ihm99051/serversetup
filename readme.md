@@ -86,3 +86,6 @@ systemctl restart nginx
 service v2ray restart
 service v2ray status
 ```
+
+# Install SS-libev
+wget --no-check-certificate -O /etc/vshadowsocks-libev/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-libev/config.json
