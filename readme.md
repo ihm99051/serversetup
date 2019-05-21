@@ -29,7 +29,10 @@ apt update
 apt install nginx
 apt install vim
 apt install curl
+apt install apt-transport-https
 apt-get update && sudo apt-get install speedtest-cli
+echo "deb https://deb.debian.org/debian/ unstable main" | sudo tee /etc/apt/sources.list.d/unstable.list
+echo "deb http://deb.debian.org/debian stretch-backports main"  | sudo tee /etc/apt/sources.list.d/stretch-backports.list
 ```
 
 # Install Certbot
@@ -101,4 +104,19 @@ systemctl restart shadowsocks-libev
 systemctl restart nginx
 service v2ray restart
 service v2ray status
+```
+
+# Install DNSCrypt-Proxy
+```
+apt update
+apt install -t unstable dnscrypt-proxy
+```
+Configure dnscrypt-proxy.toml
+```
+cd /etc/dnscrypt-proxy
+sudo cp dnscrypt-proxy.toml dnscrypt-proxy.toml.original  # non-idempotent'
+vim dnscrypt-proxy.toml
+dnscrypt-proxy -service install
+dnscrypt-proxy -service start
+service dnscrypt-proxy restart
 ```
