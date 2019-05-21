@@ -122,3 +122,4 @@ dnscrypt-proxy -service install
 dnscrypt-proxy -service start
 service dnscrypt-proxy restart
 ```
+Install for [macOS](https://github.com/jedisct1/dnscrypt-proxy/wiki/Installation-macOS)
