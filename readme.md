@@ -10,6 +10,19 @@ chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 ```
 
+# Install SS-libev
+Follow [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) to install
+```
+sudo sh -c 'printf "deb http://deb.debian.org/debian stretch-backports main" > /etc/apt/sources.list.d/stretch-backports.list'
+sudo apt update
+sudo apt -t stretch-backports install shadowsocks-libev
+```
+
+using config below
+```
+wget --no-check-certificate -O /etc/shadowsocks-libev/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-libev/config.json
+```
+
 # Install nginx + extras
 ```
 apt update
@@ -84,17 +97,8 @@ speedtest-cli --server 19036
 
 # Restart Services
 ```
+systemctl restart shadowsocks-libev
 systemctl restart nginx
 service v2ray restart
 service v2ray status
-```
-
-# Install SS-libev
-Follow [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) to install, using config below
-```
-wget --no-check-certificate -O /etc/shadowsocks-libev/config.json https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-libev/config.json
-```
-Restart service
-```
-systemctl restart shadowsocks-libev
 ```
