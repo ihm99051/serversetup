@@ -113,10 +113,11 @@ apt install -t unstable dnscrypt-proxy
 ```
 Configure dnscrypt-proxy.toml
 ```
-cd /etc/dnscrypt-proxy
-sudo cp dnscrypt-proxy.toml dnscrypt-proxy.toml.original  # non-idempotent'
 wget --no-check-certificate -O /etc/dnscrypt-proxy/dnscrypt-proxy.toml https://raw.githubusercontent.com/ihm99051/serversetup/master/dnscrypt-proxy/dnscrypt-proxy.toml
-vim dnscrypt-proxy.toml
+```
+Restart service
+```
+cd /etc/dnscrypt-proxy
 dnscrypt-proxy -service install
 dnscrypt-proxy -service start
 service dnscrypt-proxy restart
