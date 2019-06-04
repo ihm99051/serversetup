@@ -111,7 +111,7 @@
 				"timeout": 0,
 				"userLeavel": 0
 			}
-		}
+		},
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
