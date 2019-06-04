@@ -84,7 +84,7 @@
 		},
 		//QUIC WeChat-video
 		{
-			"port": 16285,
+			"port": 8280,
 			"protocol": "vmess",
 			"settings": {
 				"clients": [
@@ -108,7 +108,7 @@
 		},
 		{
 			"protocol": "shadowsocks",
-			"port": 8081,
+			"port": 8281,
 			"settings": {
 				"method": "aes-256-gcm",
 				"password": "4pple!DfacetimeY0shi?",
@@ -117,18 +117,18 @@
 				"ota": false
 			}
 		}
-		//{
-		//	"protocol": "mtproto",
-		//	"port": 2334,
-//"tag": "tg-in",
-		//	"settings": {
-		//		"users": [
-		//			{
-		//				"secret": "ddc254a2b7f3080ac6ff9465eef8e646e4"
-		//			}
-		//		]
-		//	}
-		//}
+		{
+			"protocol": "mtproto",
+			"port": 8282,
+			"tag": "tg-in",
+			"settings": {
+				"users": [
+					{
+						"secret": "0ff430909ebba419af88c71de50cdbf9"
+					}
+				]
+			}
+		}
 	],
 	"outbounds": [
 		{
