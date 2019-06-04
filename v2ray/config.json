@@ -119,12 +119,11 @@
 		},
 		{
 			"protocol": "mtproto",
-			"port": 6969,
-			"tag": "tg-in",
+			"port": 2334,
 			"settings": {
 				"users": [
 					{
-						"secret": "b0cbcef5a486d9636472ac27f8e11a9d"
+						"secret": "ddc254a2b7f3080ac6ff9465eef8e646e4"
 					}
 				]
 			}
