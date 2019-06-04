@@ -7,7 +7,7 @@
 	"inbounds": [
 		{
 			"port": 14079,
-			"listen": "127.0.0.1",
+			"listen": "0.0.0.0",
 			"protocol": "vmess",
 			"settings": {
 				"clients": [
@@ -109,7 +109,7 @@
 				"udp": true,
 				"ip": "0.0.0.0",
 				"timeout": 0,
-				"userLeavel": 0
+				"userLevel": 0
 			}
 		},
 		{
