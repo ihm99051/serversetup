@@ -102,13 +102,12 @@
 				"auth": "password",
 				"accounts": [
 					{
-						"user": "abc",
-						"pass": "1234"
+						"user": "apple",
+						"pass": "apple"
 					}
 				],
-				"udp": true,
-				"ip": "0.0.0.0",
-				"timeout": 0,
+				"udp": false,
+				"ip": "127.0.0.1",
 				"userLevel": 0
 			}
 		},
