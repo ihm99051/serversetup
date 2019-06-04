@@ -82,43 +82,6 @@
 				]
 			}
 		},
-		//QUIC WeChat-video
-		//{
-		//	"port": 8280,
-		//	"protocol": "vmess",
-		//	"settings": {
-		//		"clients": [
-		//			{
-		//				"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
-		//				"level": 1,
-		//				"alterId": 32
-		//			}
-		//		]
-		//	},
-		//	"streamSettings": {
-		//		"network": "quic",
-		//		 "quicSettings": {
-		//			"security": "chacha20-poly1305",
-		//			"key": "firewall",
-		//			"header": {
-		//				"type": "wechat-video"
-		//			}
-		//		}
-		//	}
-		//},
-		//{
-		//	"protocol": "socks",
-		//	"port": 8282,
-		//	"settings": {
-		//		"auth": "password",
-		//		"accounts": [
-		//			{
-		//				"user": "apple",
-		//				"pass": "apple"
-		//			}
-		//		]
-		//	}
-		//},
 		//{
 		//	"protocol": "mtproto",
 		//	"port": 8282,
@@ -158,11 +121,11 @@
 			"settings": {},
 			"tag": "direct"
 		},
-		{
-			"protocol": "mtproto",
-			"settings": {},
-			"tag": "tg-out"
-		}
+		//{
+		//	"protocol": "mtproto",
+		//	"settings": {},
+		//	"tag": "tg-out"
+		//}
 	],
 	"dns": {
 		"servers": [
