@@ -118,9 +118,6 @@
 					}
 				]
 			}
-			"udp": true,
-			"timeout": 0,
-			"userLeavel": 0
 		},
 		//{
 		//	"protocol": "mtproto",
