@@ -120,6 +120,7 @@
 		{
 			"protocol": "mtproto",
 			"port": 2334,
+"tag": "tg-in",
 			"settings": {
 				"users": [
 					{
