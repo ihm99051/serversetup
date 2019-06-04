@@ -82,18 +82,18 @@
 				]
 			}
 		},
-		//{
-		//	"protocol": "mtproto",
-		//	"port": 8282,
-		//	"tag": "tg-in",
-		//	"settings": {
-		//		"users": [
-		//			{
-		//				"secret": "0ff430909ebba419af88c71de50cdbf9"
-		//			}
-		//		]
-		//	}
-		//},
+		{
+			"protocol": "mtproto",
+			"port": 8282,
+			"tag": "tg-in",
+			"settings": {
+				"users": [
+					{
+						"secret": "0ff430909ebba419af88c71de50cdbf9"
+					}
+				]
+			}
+		},
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
@@ -117,15 +117,15 @@
 			"tag": "blocked"
 		},
 		{
+			"protocol": "mtproto",
+			"settings": {},
+			"tag": "tg-out"
+		}
+		{
 			"protocol": "freedom",
 			"settings": {},
 			"tag": "direct"
 		}
-		//{
-		//	"protocol": "mtproto",
-		//	"settings": {},
-		//	"tag": "tg-out"
-		//}
 	],
 	"dns": {
 		"servers": [
