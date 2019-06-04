@@ -116,7 +116,7 @@
 				"level": 1,
 				"ota": false
 			}
-		}
+		},
 		{
 			"protocol": "mtproto",
 			"port": 8282,
