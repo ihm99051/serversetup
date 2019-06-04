@@ -106,19 +106,19 @@
 		//		}
 		//	}
 		//},
-		{
-			"protocol": "socks",
-			"port": 8282,
-			"settings": {
-				"auth": "password",
-				"accounts": [
-					{
-						"user": "apple",
-						"pass": "apple"
-					}
-				]
-			}
-		},
+		//{
+		//	"protocol": "socks",
+		//	"port": 8282,
+		//	"settings": {
+		//		"auth": "password",
+		//		"accounts": [
+		//			{
+		//				"user": "apple",
+		//				"pass": "apple"
+		//			}
+		//		]
+		//	}
+		//},
 		//{
 		//	"protocol": "mtproto",
 		//	"port": 8282,
