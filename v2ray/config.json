@@ -82,18 +82,36 @@
 				]
 			}
 		},
+		//{
+		//	"protocol": "mtproto",
+		//	"port": 8282,
+		//	"tag": "tg-in",
+		//	"settings": {
+		//		"users": [
+		//			{
+		//				"secret": "0ff430909ebba419af88c71de50cdbf9"
+		//			}
+		//		]
+		//	}
+		//},
 		{
-			"protocol": "mtproto",
+			"protocol": "socks",
 			"port": 8282,
-			"tag": "tg-in",
+			"listen": "0.0.0.0",
 			"settings": {
-				"users": [
+				"auth": "password",
+				"accounts": [
 					{
-						"secret": "0ff430909ebba419af88c71de50cdbf9"
+						"user": "abc",
+						"pass": "1234"
 					}
-				]
+				],
+				"udp": true,
+				"ip": "0.0.0.0",
+				"timeout": 0,
+				"userLeavel": 0
 			}
-		},
+		}
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
@@ -116,11 +134,11 @@
 			"settings": {},
 			"tag": "blocked"
 		},
-		{
-			"protocol": "mtproto",
-			"settings": {},
-			"tag": "tg-out"
-		}
+		//{
+		//	"protocol": "mtproto",
+		//	"settings": {},
+		//	"tag": "tg-out"
+		//}
 		{
 			"protocol": "freedom",
 			"settings": {},
