@@ -116,19 +116,19 @@
 				"level": 1,
 				"ota": false
 			}
-		},
-		{
-			"protocol": "mtproto",
-			"port": 8282,
-			"tag": "tg-in",
-			"settings": {
-				"users": [
-					{
-						"secret": "0ff430909ebba419af88c71de50cdbf9"
-					}
-				]
-			}
 		}
+		//{
+		//	"protocol": "mtproto",
+		//	"port": 8282,
+		//	"tag": "tg-in",
+		//	"settings": {
+		//		"users": [
+		//			{
+		//				"secret": "0ff430909ebba419af88c71de50cdbf9"
+		//			}
+		//		]
+		//	}
+		//}
 	],
 	"outbounds": [
 		{
