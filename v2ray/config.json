@@ -107,17 +107,33 @@
 		//	}
 		//},
 		{
-			"protocol": "mtproto",
+			"protocol": "socks",
 			"port": 8282,
-			"tag": "tg-in",
 			"settings": {
-				"users": [
+				"auth": "password",
+				"accounts": [
 					{
-						"secret": "0ff430909ebba419af88c71de50cdbf9"
+						"user": "apple",
+						"pass": "apple"
 					}
 				]
 			}
+			"udp": true,
+			"timeout": 0,
+			"userLeavel": 0
 		},
+		//{
+		//	"protocol": "mtproto",
+		//	"port": 8282,
+		//	"tag": "tg-in",
+		//	"settings": {
+		//		"users": [
+		//			{
+		//				"secret": "0ff430909ebba419af88c71de50cdbf9"
+		//			}
+		//		]
+		//	}
+		//},
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
