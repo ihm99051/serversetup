@@ -94,23 +94,23 @@
 		//		]
 		//	}
 		//},
-		{
-			"protocol": "socks",
-			"port": 8282,
-			"listen": "0.0.0.0",
-			"settings": {
-				"auth": "password",
-				"accounts": [
-					{
-						"user": "apple",
-						"pass": "apple"
-					}
-				],
-				"udp": false,
-				"ip": "127.0.0.1",
-				"userLevel": 0
-			}
-		},
+		//{
+		//	"protocol": "socks",
+		//	"port": 8282,
+		//	"listen": "0.0.0.0",
+		//	"settings": {
+		//		"auth": "password",
+		//		"accounts": [
+		//			{
+		//				"user": "apple",
+		//				"pass": "apple"
+		//			}
+		//		],
+		//		"udp": false,
+		//		"ip": "127.0.0.1",
+		//		"userLevel": 0
+		//	}
+		//},
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
@@ -146,7 +146,7 @@
 	],
 	"dns": {
 		"servers": [
-			"127.0.0.1"
+			"1.1.1.1"
 		]
 	}
 }
