@@ -86,7 +86,7 @@ vi /etc/network/interfaces
 service networking restart
 ```
 
-# Sppedtest
+# Speedtest
 ```
 # STC (Hong Kong, China) [4.86 km]
 speedtest-cli --server 1536
