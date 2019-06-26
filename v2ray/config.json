@@ -115,8 +115,8 @@
 			"protocol": "shadowsocks",
 			"port": 8281,
 			"settings": {
-				"method": "aes-256-gcm",
-				"password": "4pple!DfacetimeY0shi?",
+				"method": "chacha20-ietf-poly1305",
+				"password": "4pple!D",
 				"network": "tcp,udp",
 				"level": 1,
 				"ota": false
@@ -146,8 +146,7 @@
 	],
 	"dns": {
 		"servers": [
-			"127.0.0.1",
-"1.1.1.1"
+			"127.0.0.1"
 		]
 	}
 }
