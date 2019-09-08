@@ -15,7 +15,7 @@ Follow [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) to 
 ```
 sudo sh -c 'printf "deb http://deb.debian.org/debian stretch-backports main" > /etc/apt/sources.list.d/stretch-backports.list'
 sudo apt update
-sudo apt -t stretch-backports install shadowsocks-libev
+sudo apt -t stretch-backports install shadowsocks-libev simple-obfs
 ```
 
 using config below
