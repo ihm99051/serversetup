@@ -9,6 +9,15 @@ SSServer on MacOS
 sudo easy_install pip
 sudo pip install shadowsocks
 
+------
+[root@liqiang.io]# git clone https://github.com/shaxxxxxx/shaxxxxxx.git master
+[root@liqiang.io]# cd master
+[root@liqiang.io]# git checkout master
+[root@liqiang.io]# python setup.py install
+[root@liqiang.io]# sxlocal --version
+Shaxxxxxx 3.0.0
+------
+
 sudo vi /etc/shadowsocks.json
 
 {
