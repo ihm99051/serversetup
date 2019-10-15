@@ -4,7 +4,6 @@ Here are the commands neccessary for setup
 # Install SSR
 ```
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/ihm99051/serversetup/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
@@ -30,7 +29,7 @@ apt install nginx
 apt install vim
 apt install curl
 apt install apt-transport-https
-apt-get update && sudo apt-get install speedtest-cli
+apt-get update && apt-get install speedtest-cli
 echo "deb https://deb.debian.org/debian/ unstable main" | sudo tee /etc/apt/sources.list.d/unstable.list
 echo "deb http://deb.debian.org/debian stretch-backports main"  | sudo tee /etc/apt/sources.list.d/stretch-backports.list
 ```
@@ -90,12 +89,6 @@ service networking restart
 ```
 # STC (Hong Kong, China) [4.86 km]
 speedtest-cli --server 1536
-# China Mobile,Guangdong (Guangzhou, China) [130.32 km]
-speedtest-cli --server 6611
-# ChinaTelecom-GZ (Guangzhou, CN) [130.32 km]
-speedtest-cli --server 17251
-# SmarTone (Hong Kong, China) [4.86 km]
-speedtest-cli --server 19036
 ```
 
 # Restart Services
