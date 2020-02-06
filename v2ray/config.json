@@ -126,9 +126,7 @@
 	"outbounds": [
 		{
 			"protocol": "freedom",
-			"settings": {
-				"domainStrategy": "UseIP"
-			},
+			"settings": {},
 		},
 		{
 			"protocol": "blackhole",
