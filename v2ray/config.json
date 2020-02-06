@@ -126,23 +126,31 @@
 	"outbounds": [
 		{
 			"protocol": "freedom",
-			"settings": {}
+			"settings": {
+				"domainStrategy": "UseIP"
+			},
+			"tag": "direct"
 		},
 		{
 			"protocol": "blackhole",
 			"settings": {},
 			"tag": "blocked"
 		},
+		{
+			"protocol": "dns",
+			settings": {},
+			"tag": "dns-out"
+		}
 		//{
 		//	"protocol": "mtproto",
 		//	"settings": {},
 		//	"tag": "tg-out"
 		//}
-		{
-			"protocol": "freedom",
-			"settings": {},
-			"tag": "direct"
-		}
+		//{
+		//	"protocol": "freedom",
+		//	"settings": {},
+		//	"tag": "direct"
+		//}
 	],
 	"dns": {
 		"servers": [
