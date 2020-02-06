@@ -126,7 +126,7 @@
 	"outbounds": [
 		{
 			"protocol": "freedom",
-			"settings": {},
+			"settings": {}
 		},
 		{
 			"protocol": "blackhole",
