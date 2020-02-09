@@ -82,35 +82,6 @@
 				]
 			}
 		},
-		//{
-		//	"protocol": "mtproto",
-		//	"port": 8282,
-		//	"tag": "tg-in",
-		//	"settings": {
-		//		"users": [
-		//			{
-		//				"secret": "0ff430909ebba419af88c71de50cdbf9"
-		//			}
-		//		]
-		//	}
-		//},
-		//{
-		//	"protocol": "socks",
-		//	"port": 8282,
-		//	"listen": "0.0.0.0",
-		//	"settings": {
-		//		"auth": "password",
-		//		"accounts": [
-		//			{
-		//				"user": "apple",
-		//				"pass": "apple"
-		//			}
-		//		],
-		//		"udp": false,
-		//		"ip": "127.0.0.1",
-		//		"userLevel": 0
-		//	}
-		//},
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
