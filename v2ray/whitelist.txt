@@ -5,3 +5,5 @@ mi.com
 jd.com
 taobao.com
 iqiyi.com
+weibo.com
+weibo.cn
