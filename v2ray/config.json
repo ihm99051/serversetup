@@ -86,7 +86,7 @@
 			"protocol": "shadowsocks",
 			"port": 8281,
 			"settings": {
-				"method": "chacha20-ietf-poly1305",
+				"method": "aes-128-gcm",
 				"password": "4pple!D",
 				"network": "tcp,udp",
 				"level": 1,
