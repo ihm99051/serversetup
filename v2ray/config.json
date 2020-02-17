@@ -107,16 +107,6 @@
 			"settings": {},
 			"tag": "blocked"
 		}
-		//{
-		//	"protocol": "mtproto",
-		//	"settings": {},
-		//	"tag": "tg-out"
-		//}
-		//{
-		//	"protocol": "freedom",
-		//	"settings": {},
-		//	"tag": "direct"
-		//}
 	],
 	"dns": {
 		"servers": [
