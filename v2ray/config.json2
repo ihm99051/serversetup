@@ -83,7 +83,7 @@
 			}
 		},
 		
-		// ----------------------
+		// <----------------------
 		{
 			"protocol": "dokodemo-door",
 			"port": "14077",
@@ -115,7 +115,7 @@
 				"network": "domainsocket"
 			}
 		},
-		// ----------------------
+		// ---------------------->
 		
 		{
 			"protocol": "shadowsocks",
@@ -141,8 +141,28 @@
 			"protocol": "blackhole",
 			"settings": {},
 			"tag": "blocked"
+		},
+		
+		// <----------------------
+		{
+			"protocol": "freedom",
+			"tag": "ssmux",
+			"streamSettings": {
+				"network": "domainsocket"
+			}
 		}
+		// ---------------------->
+		
 	],
+	
+	// <----------------------
+	"transport": {
+		"dsSettings": {
+			"path": "/var/run/v2ray/ss-loop.sock"
+		}
+	},
+	// ---------------------->
+	
 	"dns": {
 		"servers": [
 			"1.1.1.1",
@@ -151,4 +171,25 @@
 			"114.114.114.114"
 		]
 	}
+	
+	// <----------------------
+	"routing": {
+		"rules": [
+			{
+				"type": "field",
+				"inboundTag": [
+					"wsdoko"
+				],
+				"outboundTag": "ssmux"
+			},
+			{
+				"type": "field",
+				"ip": [
+					"geoip:private"
+				],
+				"outboundTag": "blocked"
+			}
+		]
+	}
+	// ---------------------->
 }
