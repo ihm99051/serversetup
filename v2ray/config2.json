@@ -86,7 +86,7 @@
 		//<----------------------
 		{
 			"protocol": "dokodemo-door",
-			"port": "14077",
+			"port": 14077,
 			"listen": "127.0.0.1",
 			"tag": "wsdoko",
 			"settings": {
@@ -158,7 +158,7 @@
 	//<----------------------
 	"transport": {
 		"dsSettings": {
-			"path": "/var/run/v2ray/ss-loop.sock"
+			"path": "/var/run/ss-loop.sock"
 		}
 	},
 	"routing": {
