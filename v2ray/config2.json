@@ -173,7 +173,7 @@
 	}
 	
 	//<----------------------
-	"routing": {
+	"routing":  {
 		"rules": [
 			{
 				"type": "field",
