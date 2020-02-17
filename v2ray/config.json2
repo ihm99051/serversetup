@@ -82,6 +82,41 @@
 				]
 			}
 		},
+		
+		// ----------------------
+		{
+			"protocol": "dokodemo-door",
+			"port": "14077",
+			"listen": "127.0.0.1",
+			"tag": "wsdoko",
+			"settings": {
+				"address": "v1.mux.cool",
+				"followRedirect": false,
+				"network": "tcp"
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/ss"
+				}
+			}
+		},
+		{
+			"protocol": "shadowsocks",
+			"port": 8282,
+			"settings": {
+				"method": "aes-128-gcm",
+				"password": "4pple!D",
+				"network": "tcp,udp",
+				"level": 1,
+				"ota": false
+			},
+			"streamSettings": {
+				"network": "domainsocket"
+			}
+		},
+		// ----------------------
+		
 		{
 			"protocol": "shadowsocks",
 			"port": 8281,
