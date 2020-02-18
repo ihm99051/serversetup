@@ -54,28 +54,24 @@ Add following lines
 		if ($http_upgrade != "websocket") {
 			return 403;
 		}
-        	proxy_redirect off;
-        	proxy_pass http://127.0.0.1:14079; #此IP地址和端口需要和v2ray服务器保持一致，
-        	proxy_http_version 1.1;
-        	proxy_set_header Upgrade $http_upgrade;
-        	proxy_set_header Connection "upgrade";
-        	proxy_set_header Host $http_host;
-		proxy_set_header X-Real-IP $remote_addr;
-		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_redirect off;
+  		proxy_pass http://127.0.0.1:14079;
+  		proxy_http_version 1.1;
+  		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
+		proxy_set_header Host $http_host;
 	}
-	
+
 	location /ss {
 		if ($http_upgrade != "websocket") {
 			return 403;
 		}
-        	proxy_redirect off;
-        	proxy_pass http://127.0.0.1:14077; #此IP地址和端口需要和v2ray服务器保持一致，
-        	proxy_http_version 1.1;
-        	proxy_set_header Upgrade $http_upgrade;
-        	proxy_set_header Connection "upgrade";
+		proxy_redirect off;
+		proxy_pass http://127.0.0.1:14077;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
 		proxy_set_header Host $http_host;
-		proxy_set_header X-Real-IP $remote_addr;
-		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 	}
 ```
 
