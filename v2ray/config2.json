@@ -92,7 +92,7 @@
 			"settings": {
 				"address": "v1.mux.cool",
 				"followRedirect": false,
-				"network": "tcp"
+				"network": "tcp,udp"
 			},
 			"streamSettings": {
 				"network": "ws",
@@ -169,13 +169,13 @@
 					"wsdoko"
 				],
 				"outboundTag": "ssmux"
-			},
-			{
-				"type": "field",
-				"ip": [
-					"geoip:private"
-				],
-				"outboundTag": "blocked"
+			//},
+			//{
+			//	"type": "field",
+			//	"ip": [
+			//		"geoip:private"
+			//	],
+			//	"outboundTag": "blocked"
 			}
 		]
 	},
