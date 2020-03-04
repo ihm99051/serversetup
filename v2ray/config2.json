@@ -169,13 +169,13 @@
 					"wsdoko"
 				],
 				"outboundTag": "ssmux"
-			//},
-			//{
-			//	"type": "field",
-			//	"ip": [
-			//		"geoip:private"
-			//	],
-			//	"outboundTag": "blocked"
+			},
+			{
+				"type": "field",
+				"ip": [
+					"geoip:private"
+				],
+				"outboundTag": "blocked"
 			}
 		]
 	},
@@ -185,7 +185,6 @@
 		"servers": [
 			"1.1.1.1",
 			"64.6.64.6",
-			"176.103.130.130",
 			"114.114.114.114"
 		]
 	}
