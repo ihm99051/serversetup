@@ -28,13 +28,13 @@
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
 ## server_names = ['cloudflare']
-server_names = ['adguard-dns']
+server_names = ['adguard-dns-doh', 'cisco-doh']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 ## Note: When using systemd socket activation, choose an empty set (i.e. [] ).
 
-listen_addresses = ['127.0.0.1:53', '[::1]:53', '192.168.1.253:53']
+listen_addresses = ['127.0.0.1:53', '[::1]:53', '192.168.79.103:53']
 
 
 ## Maximum number of simultaneous client connections to accept
