@@ -40,6 +40,7 @@ echo "deb http://deb.debian.org/debian stretch-backports main"  | sudo tee /etc/
 # Add to your sources.list (or add a new file with the ".list" extension to /etc/apt/sources.list.d/) You can instead use https when the apt-transport-https package is installed.
 
 apt-get update
+apt install gcc-8-base
 apt-get install certbot python-certbot-nginx -t stretch-backports
 certbot --nginx
 ```
