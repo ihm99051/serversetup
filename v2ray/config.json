@@ -2,9 +2,108 @@
 	"log": {
 		"loglevel": "warning"
 	},
+	"inbounds": [
+		{
+			"port": 14079,
+			"listen": "0.0.0.0",
+			"protocol": "vmess",
+			"settings": {
+				"clients": [
+					{
+						"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
+						"level": 1,
+						"alterId": 10
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/ray"
+				}
+			}
+		},
+		
+		
+		//<----------------------
+		{
+			"protocol": "dokodemo-door",
+			"port": 14077,
+			"listen": "127.0.0.1",
+			"tag": "wsdoko",
+			"settings": {
+				"address": "v1.mux.cool",
+				"followRedirect": false,
+				"network": "tcp,udp"
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"path": "/ss"
+				}
+			}
+		},
+		{
+			"protocol": "shadowsocks",
+			"port": 8282,
+			"settings": {
+				"method": "aes-128-gcm",
+				"password": "4pple!D",
+				"network": "tcp,udp",
+				"level": 1,
+				"ota": false
+			},
+			"streamSettings": {
+				"network": "domainsocket"
+			}
+		},
+		//---------------------->
+		
+		{
+			"protocol": "shadowsocks",
+			"port": 8281,
+			"settings": {
+				"method": "aes-128-gcm",
+				"password": "4pple!D",
+				"network": "tcp,udp",
+				"level": 1,
+				"ota": false
+			}
+		}
+	],
+	"outbounds": [
+		{
+			"protocol": "freedom",
+			"settings": {
+				"domainStrategy": "UseIP"
+			},
+			"tag": "direct"
+		},
+		{
+			"protocol": "blackhole",
+			"settings": {},
+			"tag": "blocked"
+		},
+		
+		//<----------------------
+		{
+			"protocol": "freedom",
+			"tag": "ssmux",
+			"streamSettings": {
+				"network": "domainsocket"
+			}
+		}
+		//---------------------->
+		
+	],
 	
+	//<----------------------
+	"transport": {
+		"dsSettings": {
+			"path": "/var/run/ss-loop.sock"
+		}
+	},
 	"routing": {
-		"domainStrategy": "AsIs",
 		"rules": [
 			{
 				"type": "field",
@@ -22,40 +121,14 @@
 			}
 		]
 	},
-	
-	"inbounds": [
-		{
-			"port": 14079,
-			"listen": "0.0.0.0",
-			"protocol": "vmess",
-			"settings": {
-				"clients": [
-					{
-						"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
-						"alterId": 10
-					}
-				]
-			}
-			
-		}
-	],
-	"outbounds": [
-		{
-			"protocol": "freedom",
-			"tag": "direct"
-		},
-		{
-			"protocol": "blackhole",
-			"tag": "blocked"
-		}
-			
-	],
-	
+	//---------------------->
 	
 	"dns": {
 		"servers": [
 			"208.67.222.222",
+			//"208.67.220.220",
 			"64.6.64.6",
+			//"64.6.65.6",
 			"1.1.1.1"
 		]
 	}
