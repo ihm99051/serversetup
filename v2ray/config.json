@@ -43,21 +43,6 @@
 		},
 		{
 			"protocol": "shadowsocks",
-			"port": 8282,
-			"settings": {
-				"method": "aes-128-gcm",
-				"password": "4pple!D",
-				"network": "tcp,udp",
-				"level": 1,
-				"ota": false
-			},
-			"streamSettings": {
-				"network": "domainsocket"
-			}
-		},
-		
-		{
-			"protocol": "shadowsocks",
 			"port": 8281,
 			"settings": {
 				"method": "aes-128-gcm",
