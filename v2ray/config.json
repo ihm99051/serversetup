@@ -35,14 +35,6 @@
 						"alterId": 10
 					}
 				]
-				"disableInsecureEncryption": true
-			},
-			"streamSettings": {
-				"network": "ws",
-				"wsSettings": {
-					"path": "/ray"
-				},
-				"security": "none"
 			}
 			
 		}
