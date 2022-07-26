@@ -23,7 +23,28 @@
 				}
 			}
 		},
-		
+		{
+			"port": 14078,
+			"listen": "0.0.0.0",
+			"protocol": "vless",
+			"settings": {
+				"clients": [
+					{
+						"id": "3024d771-222a-4d2c-8229-829b3a3674e0",
+						"level": 0,
+						"email": "love@v2fly.org"
+					}
+				],
+				"decryption": "none"
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "none",
+				"wsSettings": {
+					"path": "/vray"
+				}
+			}
+		},
 		{
 			"protocol": "dokodemo-door",
 			"port": 14077,
