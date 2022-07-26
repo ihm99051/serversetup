@@ -36,6 +36,8 @@ echo "deb http://deb.debian.org/debian stretch-backports main"  | sudo tee /etc/
 
 # Install Certbot
 ```
+Install [Certbot](https://certbot.eff.org/instructions?ws=nginx&os=debianbuster)
+
 # deb http://deb.debian.org/debian stretch-backports main
 # Add to your sources.list (or add a new file with the ".list" extension to /etc/apt/sources.list.d/) You can instead use https when the apt-transport-https package is installed.
 
