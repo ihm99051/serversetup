@@ -63,6 +63,18 @@ Add following lines
 		proxy_set_header Host $http_host;
 	}
 
+	location /vray {
+		if ($http_upgrade != "websocket") {
+			return 403;
+		}
+		proxy_redirect off;
+  		proxy_pass http://127.0.0.1:14078;
+  		proxy_http_version 1.1;
+  		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
+		proxy_set_header Host $http_host;
+	}
+
 	location /ss {
 		if ($http_upgrade != "websocket") {
 			return 403;
