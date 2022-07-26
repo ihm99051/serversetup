@@ -99,6 +99,9 @@ lsmod | grep bbr
 # Install V2Ray
 ```
 bash <(curl -L -s https://install.direct/go.sh)
+
+lastest:
+bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
 ```
 
 # Config V2ray
